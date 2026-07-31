@@ -3,252 +3,294 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#13231f" />
+    <meta name="theme-color" content="#f7f4ee" />
     <meta
       name="description"
-      content="Portfolio of Mariana Sanchez: export management, sustainable fashion, international marketing, and event coordination."
+      content="Portfolio of Mariana Sanchez Chagoyan: export management, international marketing, and sustainability."
     />
-    <title>Mariana Sanchez | Export Management & Sustainable Fashion</title>
+    <title>Mariana Sanchez Chagoyan | Export Management · Sustainability</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260731-three-column" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#overview" aria-label="Mariana Sanchez home">
-        <span>MS</span>
-        <strong>Mariana Sanchez</strong>
-      </a>
+    <div class="portfolio-shell">
+      <aside class="profile-sidebar" aria-label="Profile">
+        <div class="portrait-frame">
+          <img src="./assets/portrait-mariana.png" alt="Portrait of Mariana Sanchez Chagoyan" />
+        </div>
 
-      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
-        <a href="#projects">Projects</a>
-        <a href="#profile">Profile</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <div class="identity">
+          <h1>Mariana<br />Sánchez Chagoyán</h1>
+          <p>Export Management<br />International Marketing<br />Sustainability</p>
+          <span></span>
+        </div>
+
+        <p class="profile-copy">
+          Marketing graduate passionate about international business, sustainable growth and helping
+          companies expand into global markets.
+        </p>
+
+        <div class="social-grid" aria-label="Social links">
+          <a href="https://github.com/MarianaSanCha" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <span class="brand-mark">GH</span>
+            <small>GitHub</small>
+          </a>
+          <a href="#profile-highlights" aria-label="LinkedIn">
+            <span class="brand-mark large">in</span>
+            <small>LinkedIn</small>
+          </a>
+          <a href="mailto:" aria-label="Email">
+            <i data-lucide="mail"></i>
+            <small>Email</small>
+          </a>
+        </div>
+
+        <a class="resume-button" href="./assets/mariana-sanchez-cv.pdf" download="Mariana-Sanchez-Chagoyan-CV.pdf">
+          <i data-lucide="download"></i>
+          <span>Download CV</span>
+        </a>
+
+        <div class="sidebar-facts">
+          <article>
+            <i data-lucide="map-pin"></i>
+            <span>Based in Rome, Italy</span>
+          </article>
+          <article>
+            <i data-lucide="globe-2"></i>
+            <span>Open to international opportunities</span>
+          </article>
+        </div>
+
+        <section class="sidebar-section">
+          <h2>Languages</h2>
+          <p>Spanish · English · Italiano</p>
+        </section>
+
+        <section class="sidebar-section focus-list">
+          <h2>Current Focus</h2>
+          <ul>
+            <li><i data-lucide="check-circle-2"></i>Export Strategy</li>
+            <li><i data-lucide="check-circle-2"></i>Sustainability &amp; ESG</li>
+            <li><i data-lucide="check-circle-2"></i>Market Expansion</li>
+          </ul>
+        </section>
+
+        <div class="fashion-sketch" aria-hidden="true"></div>
+      </aside>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-links" id="nav-links">
+          <a class="active" href="#overview"><i data-lucide="home"></i>Overview</a>
+          <a href="#work"><i data-lucide="briefcase-business"></i>Selected Work</a>
+          <a href="#about"><i data-lucide="user-round"></i>About</a>
+          <a href="#resume"><i data-lucide="newspaper"></i>Resume</a>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" type="button">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="top-actions" aria-label="External links">
+          <a href="https://github.com/MarianaSanCha" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <span class="brand-mark">GH</span>
+          </a>
+          <a href="#profile-highlights" aria-label="LinkedIn"><span class="brand-mark large">in</span></a>
+          <a href="mailto:" aria-label="Email"><i data-lucide="mail"></i></a>
+          <button class="theme-toggle" type="button" aria-label="Change visual intensity">
+            <i data-lucide="moon"></i>
+          </button>
+        </div>
       </nav>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <i data-lucide="menu"></i>
-      </button>
-    </header>
-
-    <main>
-      <section class="hero" id="overview">
-        <div class="hero-copy">
-          <p class="eyebrow">Marketing Management · Export Management · Sustainable Fashion</p>
-          <h1>Building market strategies for fashion brands with a global and responsible lens.</h1>
-          <p class="hero-text">
-            Mariana connects international market analysis, retail knowledge, event coordination, and
-            sustainability thinking to design clear export and brand growth plans.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">
-              <i data-lucide="folder-kanban"></i>
-              <span>View Projects</span>
-            </a>
-            <a class="button secondary" href="./assets/mariana-sanchez-cv.pdf" target="_blank" rel="noreferrer">
-              <i data-lucide="file-text"></i>
-              <span>Open CV</span>
+      <main class="workspace">
+        <section class="hero-panel" id="overview">
+          <div class="hero-copy">
+            <h2>
+              I combine international marketing, export management and sustainability to design
+              <em>business strategies</em> that create long-term value.
+            </h2>
+            <span class="rule"></span>
+            <p>
+              I help brands and companies grow across borders with a strategic, sustainable and
+              market-driven approach.
+            </p>
+            <a class="hero-button" href="#work">
+              <span>View Selected Work</span>
+              <i data-lucide="arrow-right"></i>
             </a>
           </div>
-        </div>
 
-        <div class="hero-media" aria-label="Sustainable export strategy visual">
-          <img src="./assets/hero-sustainable-export.png" alt="" />
-        </div>
-      </section>
+          <div class="hero-visual">
+            <img src="./assets/hero-mariana-strategy.png" alt="International marketing and export strategy visual" />
+          </div>
+        </section>
 
-      <section class="metrics" aria-label="Profile summary">
-        <article>
-          <span>3</span>
-          <p>Languages: Spanish, English, Italian</p>
-        </article>
-        <article>
-          <span>2025</span>
-          <p>Dean's List at Luiss Business School</p>
-        </article>
-        <article>
-          <span>105</span>
-          <p>Final grade, Fashion Culture and Practice</p>
-        </article>
-      </section>
+        <section class="work-section" id="work">
+          <div class="section-title">
+            <i data-lucide="briefcase-business"></i>
+            <h2>Selected Work</h2>
+          </div>
 
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Project directions ready for her GitHub portfolio.</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card feature">
-            <div class="project-icon"><i data-lucide="globe-2"></i></div>
-            <div>
-              <p class="project-kicker">Featured project</p>
-              <h3>Export Business Plan</h3>
-              <p>
-                A market-entry plan built around country attractiveness, consumer positioning,
-                distribution channels, pricing logic, and go-to-market actions for an international
-                fashion or lifestyle brand.
-              </p>
-              <div class="tags">
-                <span>Market Analysis</span>
-                <span>Export Strategy</span>
-                <span>Go-to-Market</span>
+          <div class="work-grid">
+            <article class="work-card">
+              <img src="./assets/project-export.png" alt="" />
+              <div class="card-content">
+                <h3>International Export Business Plan</h3>
+                <p>Market expansion strategy for global growth</p>
+                <div class="tag-row">
+                  <span>Export Strategy</span>
+                  <span>Business Plan</span>
+                </div>
+                <a href="#resume">View case study <i data-lucide="arrow-right"></i></a>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card">
-            <div class="project-icon"><i data-lucide="leaf"></i></div>
-            <h3>Sustainable Fashion Strategy</h3>
+            <article class="work-card">
+              <img src="./assets/project-sustainability.png" alt="" />
+              <div class="card-content">
+                <h3>Corporate Sustainability Strategy</h3>
+                <p>ESG roadmap aligned with business objectives</p>
+                <div class="tag-row">
+                  <span>Sustainability</span>
+                  <span>ESG</span>
+                </div>
+                <a href="#resume">View case study <i data-lucide="arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <img src="./assets/project-fashion-market.png" alt="" />
+              <div class="card-content">
+                <h3>Fashion Market Analysis</h3>
+                <p>Consumer insights and market opportunity assessment</p>
+                <div class="tag-row">
+                  <span>Market Research</span>
+                  <span>Fashion</span>
+                </div>
+                <a href="#resume">View case study <i data-lucide="arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <img src="./assets/project-market-entry.png" alt="" />
+              <div class="card-content">
+                <h3>Market Entry Analysis</h3>
+                <p>International opportunity assessment and go-to-market recommendations</p>
+                <div class="tag-row">
+                  <span>Market Entry</span>
+                  <span>Strategy</span>
+                </div>
+                <a href="#resume">View case study <i data-lucide="arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="center-action">
+            <a href="#about">See all projects <i data-lucide="arrow-right"></i></a>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="section-title">
+            <i data-lucide="user-round"></i>
+            <h2>About</h2>
+          </div>
+          <div class="about-grid">
+            <article>
+              <h3>Education</h3>
+              <p>
+                Master in Marketing Management and Export Management at LUISS Business School, with
+                a focus on sustainability, impact, marketing management and foreign market analysis.
+              </p>
+            </article>
+            <article>
+              <h3>Fashion &amp; Sustainability</h3>
+              <p>
+                Bachelor in Culture e pratiche della moda from the University of Bologna, with
+                coursework in fashion marketing, fashion sociology and fashion sustainability.
+              </p>
+            </article>
+            <article>
+              <h3>Operations Mindset</h3>
+              <p>
+                Experience in event coordination, retail support, stock control and daily
+                client-facing service in multicultural environments.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" id="resume">
+          <div class="section-title">
+            <i data-lucide="newspaper"></i>
+            <h2>Resume</h2>
+          </div>
+          <div class="resume-panel">
             <p>
-              Framework for responsible fashion growth, from transparency and material choices to
-              consumer communication and measurable sustainability claims.
+              CV available as a PDF while the full project case studies are being prepared for this
+              GitHub portfolio.
             </p>
-            <div class="tags">
-              <span>Green Fashion</span>
-              <span>Transparency</span>
-              <span>ESG</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-icon"><i data-lucide="line-chart"></i></div>
-            <h3>Foreign Market Potential</h3>
-            <p>
-              Comparative market evaluation using demand signals, cultural fit, competition,
-              operational constraints, and brand positioning opportunities.
-            </p>
-            <div class="tags">
-              <span>Market Research</span>
-              <span>Consumer Insight</span>
-              <span>Fashion Marketing</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-icon"><i data-lucide="calendar-check"></i></div>
-            <h3>Event Marketing Operations</h3>
-            <p>
-              Event planning and coordination experience across providers, timelines, live services,
-              and brand moments for conventions, meetings, launches, and cultural activations.
-            </p>
-            <div class="tags">
-              <span>Events</span>
-              <span>Coordination</span>
-              <span>Brand Experience</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section profile-section" id="profile">
-        <div class="section-heading">
-          <p class="eyebrow">Profile</p>
-          <h2>A multicultural marketer with a fashion and sustainability foundation.</h2>
-        </div>
-
-        <div class="profile-grid">
-          <article>
-            <i data-lucide="graduation-cap"></i>
-            <h3>Education</h3>
-            <p>
-              Master in Marketing Management and Export Management at Luiss Business School, with
-              coursework in sustainability, impact, marketing management, and potential market
-              analysis.
-            </p>
-          </article>
-          <article>
-            <i data-lucide="shirt"></i>
-            <h3>Fashion Perspective</h3>
-            <p>
-              Bachelor's Degree in Culture e pratiche della moda from Universita di Bologna, with
-              focus areas in fashion marketing, sociology, and sustainability.
-            </p>
-          </article>
-          <article>
-            <i data-lucide="users-round"></i>
-            <h3>Customer & Retail Sense</h3>
-            <p>
-              Hands-on experience in customer service, stock control, banking support, and retail
-              operations across international and client-facing settings.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section timeline-section" id="experience">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Work and education highlights.</h2>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <span>2025-2026</span>
             <div>
-              <h3>Luiss Business School · Rome</h3>
-              <p>Master in Marketing Management and Export Management. Dean's List.</p>
+              <a href="./assets/mariana-sanchez-cv.pdf" target="_blank" rel="noreferrer">
+                Open CV <i data-lucide="arrow-up-right"></i>
+              </a>
+              <a href="./assets/mariana-sanchez-cv.pdf" download="Mariana-Sanchez-Chagoyan-CV.pdf">
+                Download CV <i data-lucide="download"></i>
+              </a>
             </div>
-          </article>
-          <article>
-            <span>2025</span>
-            <div>
-              <h3>MSG Studio · Bologna</h3>
-              <p>Event management intern supporting planning, marketing, and provider coordination.</p>
-            </div>
-          </article>
-          <article>
-            <span>2025</span>
-            <div>
-              <h3>Natura Selection · Rimini</h3>
-              <p>Sales assistant focused on customer service, stock control, and replenishment.</p>
-            </div>
-          </article>
-          <article>
-            <span>2022-2025</span>
-            <div>
-              <h3>Universita di Bologna · Rimini</h3>
-              <p>Bachelor's Degree in Culture e pratiche della moda. Final grade: 105.</p>
-            </div>
-          </article>
-          <article>
-            <span>2022</span>
-            <div>
-              <h3>Citizens Bank · Mexico City</h3>
-              <p>Customer service for U.S.-based clients, transactions, and account support.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
+      </main>
 
-      <section class="contact" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Ready for export, marketing, and sustainability projects.</h2>
-          <p>
-            This page is an initial GitHub Pages version. Project files, case studies, and the final
-            visual direction can be added as Mariana's portfolio grows.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="https://github.com/MarianaSanCha" target="_blank" rel="noreferrer">
-            <i data-lucide="github"></i>
-            <span>GitHub</span>
-          </a>
-          <a class="button secondary" href="./assets/mariana-sanchez-cv.pdf" download="Mariana-Sanchez-CV.pdf">
-            <i data-lucide="download"></i>
-            <span>Download CV</span>
-          </a>
-        </div>
-      </section>
-    </main>
+      <aside class="right-column" aria-label="Profile details">
+        <section class="side-panel" id="profile-highlights">
+          <h2>Profile Highlights</h2>
 
-    <script src="./script.js"></script>
+          <div class="highlight-group">
+            <h3><i data-lucide="briefcase-business"></i>Experience</h3>
+            <ul>
+              <li>International marketing and export management</li>
+              <li>Event management and project coordination</li>
+              <li>Retail and customer service experience</li>
+            </ul>
+          </div>
+
+          <div class="highlight-group">
+            <h3><i data-lucide="graduation-cap"></i>Education</h3>
+            <ul>
+              <li>Master in Marketing Management Export Management - LUISS Business School</li>
+              <li>Bachelor in Culture e pratiche della moda - University of Bologna</li>
+            </ul>
+          </div>
+
+          <div class="highlight-group">
+            <h3><i data-lucide="trophy"></i>Recognition</h3>
+            <ul>
+              <li>Dean's List (2025-2026)</li>
+              <li>Green Fashion Transparency Certification - Fashion Research Italy</li>
+              <li>Volunteer Workshop Facilitator Save the Children (2026)</li>
+            </ul>
+          </div>
+
+          <div class="highlight-group">
+            <h3><i data-lucide="star"></i>Strengths</h3>
+            <ul>
+              <li>Cross-cultural communication</li>
+              <li>Strategic thinking &amp; problem solving</li>
+              <li>Sustainability-oriented mindset</li>
+              <li>Adaptable &amp; proactive</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <script src="./script.js?v=20260731-three-column"></script>
   </body>
 </html>
