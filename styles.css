@@ -348,7 +348,7 @@ img {
 
 .hero-panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.62fr);
+  grid-template-columns: minmax(0, 0.86fr) minmax(330px, 0.72fr);
   gap: clamp(20px, 2.6vw, 34px);
   align-items: center;
   min-height: 252px;
@@ -386,7 +386,7 @@ img {
 .hero-visual {
   align-self: center;
   overflow: hidden;
-  max-height: 286px;
+  max-height: 330px;
 }
 
 .hero-visual img {
@@ -767,7 +767,7 @@ img {
   }
 
   .hero-visual {
-    max-height: 240px;
+    max-height: 280px;
   }
 
   .about-grid,
