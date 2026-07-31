@@ -602,81 +602,73 @@ img {
   grid-row: 2;
   height: calc(100vh - 68px);
   overflow: hidden auto;
-  padding: 24px 24px 36px 0;
+  padding: 22px 22px 28px 0;
 }
 
 .side-panel {
-  padding: 26px 28px;
-  border: 1px solid var(--line-soft);
+  padding: 22px 22px 24px;
+  border: 1px solid rgba(73, 85, 37, 0.18);
   border-radius: 7px;
-  background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.9), rgba(255, 253, 248, 0.78)),
-    radial-gradient(circle at 92% 12%, rgba(109, 218, 242, 0.16), transparent 34%),
-    radial-gradient(circle at 16% 92%, rgba(105, 140, 100, 0.15), transparent 30%);
+  background: rgba(255, 253, 248, 0.86);
   box-shadow: 0 12px 30px rgba(35, 34, 27, 0.04);
 }
 
-.highlight-group {
-  padding: 30px 0;
-  border-bottom: 1px solid var(--line-soft);
+.side-panel h2 {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.58rem;
+  font-weight: 600;
 }
 
-.highlight-group:first-child {
-  padding-top: 8px;
+.side-panel h2 svg {
+  width: 27px;
+  height: 27px;
+  color: var(--market-teal);
+}
+
+.highlight-group {
+  padding: 9px 0 14px;
+  border-bottom: 0;
+}
+
+.side-panel h2 + .highlight-group {
+  padding-top: 0;
 }
 
 .highlight-group:last-child {
-  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .highlight-group h3 {
   display: flex;
-  gap: 16px;
+  gap: 11px;
   align-items: center;
-  margin-bottom: 18px;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.42rem;
-  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--global-blue);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.94rem;
+  font-weight: 800;
 }
 
-.icon-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  border: 1px solid rgba(255, 253, 248, 0.74);
-  border-radius: 50%;
-  color: #fffdf8;
-  box-shadow: 0 12px 28px rgba(17, 58, 140, 0.14);
-}
-
-.icon-badge svg {
-  width: 20px;
-  height: 20px;
-}
-
-.badge-education {
-  background: linear-gradient(135deg, var(--sustainability-sage), #4f704c);
-}
-
-.badge-recognition {
-  background: linear-gradient(135deg, var(--market-teal), var(--market-sky));
-}
-
-.badge-strengths {
-  background: linear-gradient(135deg, var(--global-navy), var(--global-blue));
+.highlight-group h3 svg {
+  width: 21px;
+  height: 21px;
+  color: var(--market-teal);
 }
 
 .highlight-group ul {
   display: grid;
-  gap: 14px;
+  gap: 7px;
   margin: 0;
   padding-left: 18px;
   color: #33342e;
-  font-size: 0.94rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.44;
 }
 
 .highlight-group li::marker {
