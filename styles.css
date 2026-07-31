@@ -348,15 +348,15 @@ img {
 
 .hero-panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(330px, 0.72fr);
-  gap: clamp(20px, 2.6vw, 34px);
+  grid-template-columns: minmax(0, 0.76fr) minmax(420px, 0.96fr);
+  gap: clamp(16px, 2vw, 28px);
   align-items: center;
   min-height: 252px;
   margin-bottom: 24px;
 }
 
 .hero-copy h2 {
-  max-width: 660px;
+  max-width: 580px;
   margin-bottom: 20px;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(3rem, 4vw, 4.65rem);
@@ -386,12 +386,14 @@ img {
 .hero-visual {
   align-self: center;
   overflow: hidden;
-  max-height: 330px;
+  max-height: 392px;
 }
 
 .hero-visual img {
-  width: 100%;
+  width: 116%;
+  max-width: none;
   height: auto;
+  margin-left: -8%;
   object-fit: contain;
   object-position: center;
 }
@@ -585,25 +587,20 @@ img {
 }
 
 .side-panel {
-  padding: 26px;
+  padding: 26px 28px;
   border: 1px solid var(--line-soft);
   border-radius: 7px;
   background: rgba(255, 253, 248, 0.82);
   box-shadow: 0 12px 30px rgba(35, 34, 27, 0.04);
 }
 
-.side-panel h2 {
-  margin-bottom: 22px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--line);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.66rem;
-  font-weight: 600;
+.highlight-group {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line-soft);
 }
 
-.highlight-group {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line-soft);
+.highlight-group:first-child {
+  padding-top: 8px;
 }
 
 .highlight-group:last-child {
@@ -612,26 +609,50 @@ img {
 
 .highlight-group h3 {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.24rem;
+  font-size: 1.42rem;
   font-weight: 600;
 }
 
-.highlight-group svg {
-  color: var(--olive);
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #fffdf8;
+}
+
+.icon-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.badge-education {
+  background: #6f7d4c;
+}
+
+.badge-recognition {
+  background: #b6655f;
+}
+
+.badge-strengths {
+  background: #c2922f;
 }
 
 .highlight-group ul {
   display: grid;
-  gap: 11px;
+  gap: 14px;
   margin: 0;
   padding-left: 18px;
   color: #33342e;
-  font-size: 0.84rem;
-  line-height: 1.48;
+  font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 .highlight-group li::marker {
@@ -767,7 +788,12 @@ img {
   }
 
   .hero-visual {
-    max-height: 280px;
+    max-height: 320px;
+  }
+
+  .hero-visual img {
+    width: 108%;
+    margin-left: -4%;
   }
 
   .about-grid,
