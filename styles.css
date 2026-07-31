@@ -5,6 +5,11 @@
   --muted: #52554b;
   --olive: #495525;
   --olive-2: #6d744c;
+  --global-navy: #113a8c;
+  --global-blue: #14488c;
+  --market-teal: #0388a6;
+  --market-sky: #6ddaf2;
+  --sustainability-sage: #698c64;
   --line: rgba(73, 85, 37, 0.25);
   --line-soft: rgba(17, 16, 14, 0.11);
   --chip: #eeebe3;
@@ -604,7 +609,10 @@ img {
   padding: 26px 28px;
   border: 1px solid var(--line-soft);
   border-radius: 7px;
-  background: rgba(255, 253, 248, 0.82);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.9), rgba(255, 253, 248, 0.78)),
+    radial-gradient(circle at 92% 12%, rgba(109, 218, 242, 0.16), transparent 34%),
+    radial-gradient(circle at 16% 92%, rgba(105, 140, 100, 0.15), transparent 30%);
   box-shadow: 0 12px 30px rgba(35, 34, 27, 0.04);
 }
 
@@ -638,8 +646,10 @@ img {
   flex: 0 0 auto;
   width: 38px;
   height: 38px;
+  border: 1px solid rgba(255, 253, 248, 0.74);
   border-radius: 50%;
   color: #fffdf8;
+  box-shadow: 0 12px 28px rgba(17, 58, 140, 0.14);
 }
 
 .icon-badge svg {
@@ -648,15 +658,15 @@ img {
 }
 
 .badge-education {
-  background: #6f7d4c;
+  background: linear-gradient(135deg, var(--sustainability-sage), #4f704c);
 }
 
 .badge-recognition {
-  background: #b6655f;
+  background: linear-gradient(135deg, var(--market-teal), var(--market-sky));
 }
 
 .badge-strengths {
-  background: #c2922f;
+  background: linear-gradient(135deg, var(--global-navy), var(--global-blue));
 }
 
 .highlight-group ul {
@@ -670,7 +680,7 @@ img {
 }
 
 .highlight-group li::marker {
-  color: #8a6c18;
+  color: var(--market-teal);
 }
 
 @media (max-width: 1240px) {
