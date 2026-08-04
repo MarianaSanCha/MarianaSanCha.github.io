@@ -354,6 +354,13 @@ img {
   font-weight: 800;
 }
 
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .skills-panel {
   display: grid;
   grid-template-columns: auto 1fr;
