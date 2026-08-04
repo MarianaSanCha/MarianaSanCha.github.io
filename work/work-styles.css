@@ -257,6 +257,10 @@ img {
   aspect-ratio: 1.62 / 1;
 }
 
+.wide-preview img {
+  aspect-ratio: 1.78 / 1;
+}
+
 .portrait-preview img {
   aspect-ratio: 1.1 / 1.28;
 }
