@@ -465,7 +465,7 @@ img {
 
 .card-content {
   display: flex;
-  min-height: 204px;
+  min-height: 224px;
   flex-direction: column;
   padding: 14px 14px 12px;
 }

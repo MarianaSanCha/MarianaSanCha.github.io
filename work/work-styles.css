@@ -244,6 +244,23 @@ img {
   object-fit: cover;
 }
 
+.document-preview {
+  background: #fff;
+}
+
+.document-preview img {
+  padding: 10px;
+  object-fit: contain;
+}
+
+.landscape-preview img {
+  aspect-ratio: 1.62 / 1;
+}
+
+.portrait-preview img {
+  aspect-ratio: 1.1 / 1.28;
+}
+
 .mock-certificate,
 .mock-diagram {
   display: grid;
@@ -415,6 +432,39 @@ img {
   font-size: 2rem;
 }
 
+.certificate-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.certificate-list a {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.8);
+}
+
+.certificate-list img {
+  width: 100%;
+  aspect-ratio: 1.42 / 1;
+  object-fit: contain;
+  border: 1px solid rgba(17, 58, 140, 0.12);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.certificate-list span {
+  color: #1d2f38;
+  font-size: 0.94rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -530,6 +580,10 @@ body.theme-fashion .case-footer {
   }
 
   .skills-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-list a {
     grid-template-columns: 1fr;
   }
 }
