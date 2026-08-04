@@ -501,6 +501,14 @@ img {
   border-right: 0;
 }
 
+.compact-icon-grid {
+  margin-top: 18px;
+}
+
+.compact-icon-grid div {
+  min-height: 92px;
+}
+
 .icon-grid i {
   width: 28px;
   height: 28px;
