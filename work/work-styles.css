@@ -277,6 +277,12 @@ img {
     repeating-linear-gradient(135deg, transparent 0 28px, rgba(17, 58, 140, 0.05) 29px 30px);
 }
 
+.mock-certificate-logo {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 16px;
+}
+
 .mock-certificate strong,
 .mock-diagram strong {
   color: var(--accent);
