@@ -371,7 +371,7 @@ img {
 }
 
 .hero-copy em {
-  color: var(--olive);
+  color: var(--global-navy);
   font-style: italic;
 }
 
